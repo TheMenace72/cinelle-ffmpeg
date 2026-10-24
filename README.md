@@ -1,6 +1,6 @@
-# FFmpeg in Cinelle — corresponding source (LGPL 2.1)
+# FFmpeg in Lucelle — corresponding source (LGPL 2.1)
 
-Cinelle (Android TV app, `app.cinelle.tv`) ships `libffmpegJNI.so`, which contains **FFmpeg 9.0.2** statically
+Lucelle (Android TV app, `app.lucelle.tv`) ships `libffmpegJNI.so`, which contains **FFmpeg 9.0.2** statically
 linked into the Media3 FFmpeg decoder extension. FFmpeg is licensed under the **GNU Lesser General Public License
 version 2.1** (see `COPYING.LGPLv2.1`). This repository provides everything needed to rebuild that library and replace
 it in the app.
@@ -30,10 +30,10 @@ NDK=/path/to/ndk/30.x SDK=/path/to/android-sdk ./build.sh /tmp/media3-ffmpeg
 # result: out/media3-decoder-ffmpeg-1.11.1.aar  → jni/<abi>/libffmpegJNI.so
 ```
 
-To use your own build in Cinelle: unpack the APK, replace `lib/<abi>/libffmpegJNI.so` with your build, re-sign the
+To use your own build in Lucelle: unpack the APK, replace `lib/<abi>/libffmpegJNI.so` with your build, re-sign the
 APK with your own key and install it. The JNI interface is not obfuscated.
 
 ## Contact
 
 Questions about this source or requests for it: open an issue in this repository. This source is offered for at least
-three years after the last distribution of a Cinelle version containing it.
+three years after the last distribution of a Lucelle version containing it.
